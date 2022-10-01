@@ -124,7 +124,7 @@
       </section>
       <section class="section">
         <div class="container list_second">
-          <h2>Czym się zajmujemy</h2>
+          <h2 class="list_second__title">Czym się zajmujemy</h2>
           <ul class="list_second__item">
             <li class="thumb">
               <img
@@ -582,11 +582,53 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="close-button" data-modal-close>
+        <button type="button" class="modal__close" data-modal-close>
           <svg width="18px" height="18px">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <h3 class="modal__header">Zostaw swoje dane w formularzu poniżej</h3>
+        <form>
+          <div class="modal__box">
+            <label class="modal__label" for="user-name">Imię</label>
+            <input type="text" name="user-name" id="user-name" required class="modal__input"/>
+            <svg class="modal__icon" width="12px" height="12px">
+              <use href=./images/icons.svg#icon-person></use></svg>
+          </div>
+          <div class="modal__box">
+            <label class="modal__label" for="user-tel">Telefon</label>
+            <input type="tel" name="user-tel" id="user-tel" required class="modal__input"/>
+            <svg class="modal__icon" width="12px" height="12px">
+              <use href=./images/icons.svg#icon-tel></use></svg>
+          </div>
+          <div class="modal__box">
+            <label class="modal__label" for="user-email">Email</label>
+            <input type="email" name="user-email" id="user-email" required class="modal__input"/>
+            <svg class="modal__icon" width="12px" height="12px">
+              <use href=./images/icons.svg#icon-mail></use></svg>
+          </div>
+          <div class="modal__box">
+            <label class="modal__label" for="feedback">Komentarz</label>
+            <textarea name="feedback" id="feedback" placeholder="Wprowadź tekst" required class="modal__input modal__feedback"></textarea>
+          </div>
+          <div class="modal__agreement-box">
+            <label class="modal__agreement">
+              <input
+                class="modal__checkbox"
+                type="checkbox"
+                name="agreement"
+                value="agree"
+              />
+              <svg class="modal__checkbox-empty" width="16px" height="15px">
+                <use href="./images/icons.svg#checkbox"></use></svg>
+              <svg class="modal__checkbox-blue" width="16px" height="15px">
+                <use href="./images/icons.svg#checkbox2"></use></svg>
+              <span class="modal-agreement-text">Oświadczam, iż akceptuję <a href="#" class="blue-text">Regulamin</a> i <a href="#" class="blue-text">Politykę Prywatności.</a></span></label>
+            </label>
+          </div>
+          <p class="modal__button">
+            <button type="submit" class="modal__button-style">Wyślij</button></form>
+          </p>
       </div>
     </div>
     <script src="./js/modal.js"></script>
