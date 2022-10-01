@@ -34,7 +34,7 @@ body {
 .no_underline {
   text-decoration: none;
 }
-.nav_list,
+.header__list,
 .contacts,
 .list_first li,
 .list_second li,
@@ -74,12 +74,12 @@ body {
   padding-top: 24px;
   padding-bottom: 25px;
 }
-.nav_list {
+.header__list {
   display: flex;
   gap: 46px;
   padding: 32px 0 32px 93px;
 }
-.nav_list-active::after {
+.header__list--active::after {
   position: relative;
   content: "";
   width: 100%;
@@ -92,8 +92,8 @@ body {
   transition-property: background-color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav_list-hover:hover::after,
-.nav_list-hover:focus::after {
+.header__list--hover:hover::after,
+.header__list--hover:focus::after {
   position: relative;
   content: "";
   width: 100%;
@@ -420,6 +420,46 @@ body {
   fill: var(--white);
   cursor: pointer;
 }
+.newsletter {
+  padding: 72px 0 0 78px;
+}
+.newsletter__title {
+  padding-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+.newsletter__input {
+  height: 50px;
+  width: 358px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: var(--primary_background);
+  padding: 15px 16px;
+}
+.newsletter__button {
+  padding-left: 12px;
+}
+.newsletter__button--style {
+  background-color: var(--brand_color);
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  cursor: pointer;
+  border: none;
+  font-family: "Roboto";
+  letter-spacing: 0.06em;
+  padding: 10px 0 10px 42px;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+}
 /* portfolio  */
 .menu_portfolio {
   display: flex;
@@ -588,7 +628,7 @@ body {
   border-radius: 4px;
   color: #212121;
   font-size: 12px;
-  padding: 4px 10px 4px 10px;
+  padding: 4px 32px;
   margin: 4px 0px 10px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -608,6 +648,7 @@ body {
   height: 120px;
   resize: none;
   padding: 12px 16px;
+  opacity: 0.5;
 }
 .modal__agreement-box {
   padding: 10px 0px 30px 55px;
@@ -653,7 +694,7 @@ body {
 .modal__button {
   padding: 0 164px;
 }
-.modal__button-style {
+.modal__button--style {
   background-color: var(--brand_color);
   color: white;
   font-weight: 700;
@@ -665,7 +706,5 @@ body {
   letter-spacing: 0.06em;
   padding: 10px 76px;
   border-radius: 4px;
-  transition-duration: 250ms;
-  transition-property: background-color, color, box-shadow;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
 }
