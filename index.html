@@ -579,13 +579,28 @@
           </div>
         </section>
         <section class="newsletter">
-            <h3 class="newsletter__title">ZAPISZ SIĘ DO NEWSLETTERA</h3>
-            <form>
-              <label>
-                <input type="email" name="user-email" placeholder="E-mail" required class="newsletter__input">
-              </label>
-              <button type="submit" class="newsletter__button newsletter__button--style">Zapisz się</button>
-            </form>
+          <h3 class="newsletter__title">ZAPISZ SIĘ DO NEWSLETTERA</h3>
+          <form>
+            <label class="newsletter__box">
+              <input
+                type="email"
+                name="user-email"
+                placeholder="E-mail"
+                required
+                class="newsletter__input"
+              />
+
+              <button
+                type="submit"
+                class="newsletter__button newsletter__button--style"
+              >
+                Zapisz się
+                <svg class="newsletter__icon" width="24px" height="24px">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </label>
+          </form>
         </section>
       </section>
     </footer>
