@@ -421,7 +421,8 @@ body {
   cursor: pointer;
 }
 .newsletter {
-  padding: 72px 0 0 78px;
+  padding-top: 72px;
+  margin-left: auto;
 }
 .newsletter__title {
   padding-bottom: 20px;
